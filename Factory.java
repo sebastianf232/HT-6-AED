@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Universidad del Valle de Guatemala
  * Algoritmos y Estructuras de Datos
- * Hoja de Trabajo 4
+ * Hoja de Trabajo 6
  * @author Sebastian Franco 21484
  * @author Gabriela de Leon 21037 
  * Clase Factory
