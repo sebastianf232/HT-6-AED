@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Algoritmos y Estructuras de Datos
  * Hoja de Trabajo 4
  * @author Sebastian Franco 21484
- * @author Gabriela de Leon 
+ * @author Gabriela de Leon 21037 
  * Clase Factory
  */
 public class Factory<E> {
