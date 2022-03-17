@@ -1,5 +1,5 @@
 
-Public Class Cartas {
+public class Cartas {
     private int valor;
     private String nombre;
     private String tipo;
