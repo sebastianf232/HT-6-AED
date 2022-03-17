@@ -1,4 +1,8 @@
-
+/**
+ * @author Sebastian Franco 21484
+ * @author Gabriela de Leon 21037 
+ * Clase Cartas
+ */
 public class Cartas {
     private int valor;
     private String nombre;
