@@ -78,12 +78,11 @@ public class Main {
             } else if (eleccion =="4"){
                 mazo.mostrarTipo();
             } else if (eleccion =="5"){
-                cartas.
+                mazo.mostrarTodas();
             } else if (eleccion =="6"){
-                
+                mazo.mostrarTipo();
             } else if (eleccion =="7"){
                 next = false;
-            }
 
         }
 
