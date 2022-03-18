@@ -19,6 +19,7 @@ public class Main {
     public static void main(String[] args){
         Factory f = new Factory<>();
         Scanner sc = new Scanner(System.in);
+        Cartas car = new Cartas(null, null);
 
         Map Hmap;
         Map Tmap;
@@ -70,7 +71,11 @@ public class Main {
             String eleccion = sc.next();
 
             if (eleccion == "1"){
-
+                String nom = sc.nextLine();
+                car.setNombre(nom);
+                String tip = sc.nextLine();
+                car.setTipo(tip);
+                mazo.agregarCarta(nom, tip);
             } else if (eleccion =="2"){
 
             } else if (eleccion =="3"){
@@ -87,5 +92,5 @@ public class Main {
         }
 
     }
-}
+}}
 
