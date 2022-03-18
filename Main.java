@@ -16,11 +16,14 @@ public class Main {
         System.out.println("3) LinkedHashMap."); 
             switch(op){
                 case 1:
-                System.out.println("HashMap"); 
+                    System.out.println("HashMap"); 
                 case 2:
-                System.out.println(""); 
+                    System.out.println(""); 
                 case 3:
-                System.out.println(""); 
+                    System.out.println(""); 
+                default:
+                    System.out.println("Escriba una opción correcta");
+                    break;
 
             }
     }
