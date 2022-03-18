@@ -20,13 +20,11 @@ public class Factory<E,I> {
      * @return Map
      */
     public Map<E,I> getMap(String opc){
-        if(opc.equalsIgnoreCase("HashMap")){ ///HashMap
-            return new HashMap<E,I>();
-        } else if  (opc.equalsIgnoreCase("TreeMap")){ ///Treemaps
-            return new TreeMap<E,I>();
-        } else if (opc.equalsIgnoreCase("LinkedHashMap")){ ///LinkedHashMap
-            return new LinkedHashMap<E,I>();
-        }
-        return null;
+       switch (opc){
+           case "1": return new HashMap<E,I>();
+           case "2": return new TreeMap<E,I>();
+           case "3": return new LinkedHashMap<E,I>();
+           default: return null;
+       } 
     }
 }
