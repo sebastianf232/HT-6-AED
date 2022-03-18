@@ -1,3 +1,9 @@
+/**
+ * @author Sebastian Franco 21484
+ * @author Gabriela de Leon 21037 
+ * Clase Main
+ */
+
 //import java.io.IOException;
 //import java.nio.charset.StandardCharsets;
 //import java.nio.file.Files;
