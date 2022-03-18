@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args){
         Factory f = new Factory<>();
         Scanner sc = new Scanner(System.in);
-        Cartas car = new Cartas(null, null);
+        Cartas car = new Cartas();
 
         Map Hmap;
         Map Tmap;
@@ -70,23 +70,26 @@ public class Main {
             System.out.println("7. Salir");
             String eleccion = sc.next();
 
-            if (eleccion == "1"){
+            if (eleccion.equals("1")){
+                System.out.println("Nombre: ");
                 String nom = sc.nextLine();
+                System.out.println("Tipo: ");
                 car.setNombre(nom);
                 String tip = sc.nextLine();
                 car.setTipo(tip);
                 mazo.agregarCarta(nom, tip);
-            } else if (eleccion =="2"){
+                System.out.println("Se agregado la carta");
+            } else if (eleccion.equals("2")){
 
-            } else if (eleccion =="3"){
+            } else if (eleccion.equals("3")){
                 mazo.mostrarTodas();
-            } else if (eleccion =="4"){
+            } else if (eleccion.equals("4")){
                 mazo.mostrarTipo();
-            } else if (eleccion =="5"){
+            } else if (eleccion.equals("5")){
                 mazo.mostrarTodas();
-            } else if (eleccion =="6"){
+            } else if (eleccion.equals("6")){
                 mazo.mostrarTipo();
-            } else if (eleccion =="7"){
+            } else if (eleccion.equals("7")){
                 next = false;
 
         }
