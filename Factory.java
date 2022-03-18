@@ -12,14 +12,19 @@ import java.util.TreeMap;
  * Clase Factory
  */
 public class Factory<E,I> {
+    String E;
+    String I;
+
+    /**
+     * @param opc
+     * @return Map
+     */
     public Map<E,I> getMap(String opc){
-        if(opc.equalsIgnoreCase("HashMap")){
+        if(opc.equalsIgnoreCase("HashMap")){ ///HashMap
             return new HashMap<E,I>();
-        } else if 
-        (opc.equalsIgnoreCase("TreeMap")){
+        } else if  (opc.equalsIgnoreCase("TreeMap")){ ///Treemaps
             return new TreeMap<E,I>();
-        } else if 
-        (opc.equalsIgnoreCase("LinkedHashMap")){
+        } else if (opc.equalsIgnoreCase("LinkedHashMap")){ ///LinkedHashMap
             return new LinkedHashMap<E,I>();
         }
         return null;

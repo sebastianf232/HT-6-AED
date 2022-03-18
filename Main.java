@@ -1,22 +1,28 @@
+import java.util.*;
+import java.nio.*;
+import java.io.IOException;
+
+
 /**
  * @author Sebastian Franco 21484
  * @author Gabriela de Leon 21037 
  * Clase Main
  */
 
-//import java.io.IOException;
-//import java.nio.charset.StandardCharsets;
-//import java.nio.file.Files;
-//import java.nio.file.Paths;
-//import java.util.ArrayList;
-//import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int op = sc.nextInt();
-        System.out.println("Implementacion que desea utilizar: "); 
+
+        Map mapa;
+        Map mapa2;
+        Mazo mazo = new Mazo();
+        String opcion;
+        opcion = read.next();
+
+        System.out.println("Tipo de mapa que quiere utilizar que desea utilizar: "); 
         System.out.println("1) HashMap"); 
         System.out.println("2) TreeMap");
         System.out.println("3) LinkedHashMap."); 
@@ -34,4 +40,4 @@ public class Main {
             }
     }
 }
-}
+
