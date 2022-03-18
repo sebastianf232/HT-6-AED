@@ -12,6 +12,7 @@ public class Cartas {
 		this.nombre =  nombre;
 		this.tipo = tipo;
 	}
+	public Cartas(){} //constructor vacio
 
 	/**
 	 * @return Valor
