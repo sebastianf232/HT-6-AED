@@ -1,4 +1,8 @@
-import java.util.Scanner;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+//import java.util.Scanner; creo que no hay que usarla
 
 /**
  * Universidad del Valle de Guatemala
@@ -8,8 +12,20 @@ import java.util.Scanner;
  * @author Gabriela de Leon 21037 
  * Clase Factory
  */
-public class Factory<E> {
-    private Pilas<E> stack;
+public class Factory<E,I> {
+    public Map<E,I> getMap(String opc){
+        if(opc.equalsIgnoreCase("HashMap")){
+            return new HashMap<E,I>();
+        } else if 
+        (opc.equalsIgnoreCase("TreeMap")){
+            return new TreeMap<E,I>();
+        } else if 
+        (opc.equalsIgnoreCase("LinkedHashMap")){
+            return new LinkedHashMap<E,I>();
+        }
+        return null;
+    }
+    /**private Pilas<E> stack;
     public Pilas<E> getStack(){
         Scanner scan = new Scanner(System.in);
         boolean on = true;
@@ -39,5 +55,5 @@ public class Factory<E> {
             stack = new StackPL<>();
         }
         return stack; ///Se regresa el Stack segun el orden que se escogio.
-    }
+    */}
 }
