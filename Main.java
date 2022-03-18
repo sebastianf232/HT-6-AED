@@ -19,7 +19,6 @@ public class Main {
     public static void main(String[] args){
         Factory f = new Factory<>();
         Scanner sc = new Scanner(System.in);
-        int op = sc.nextInt();
 
         Map Hmap;
         Map Tmap;
